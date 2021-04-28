@@ -8,5 +8,9 @@ public class Listener implements MessageCreateListener {
             event.getMessage().pin();
             event.getChannel().sendMessage("roger roger");
         }
+
+        if (event.getMessageContent().equalsIgnoreCase("uh oh")) {
+            event.getChannel().sendMessage("uh oh");
+        }
     }
 }
